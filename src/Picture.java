@@ -1,5 +1,7 @@
 public class Picture
 {
+    private Square backround;
+    private Square ground;
     private Square wall;
     private Square window;
     private Triangle roof;
@@ -11,8 +13,10 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
+        backround = new Square(500,300,0,0, "blue");
+        ground = new Square(500,50,0,260, "gray");
+        wall = new Square(50,26,230,90, "gray");
+        window = new Square(15,15,75,25, "blue");
         roof = new Triangle();
         sun = new Circle();
         drawn = false;
@@ -29,15 +33,33 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+
+            backround.makeVisible();
+            ground.makeVisible();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*
             wall.moveHorizontal(-220);
             wall.moveVertical(20);
-            wall.changeSize(120);
+            wall.changeSize(120, 120);
             wall.makeVisible();
 
             window.changeColor("black");
             window.moveHorizontal(-120);
             window.moveVertical(40);
-            window.changeSize(40);
+            window.changeSize(40, 40);
             window.makeVisible();
 
             roof.changeSize(60, 180);
@@ -49,7 +71,7 @@ public class Picture
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
             sun.changeSize(80);
-            sun.makeVisible();
+            sun.makeVisible();*/
             drawn = true;
         }
     }
