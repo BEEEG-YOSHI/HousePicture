@@ -29,7 +29,7 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
+            wall.moveHorizontal(-410);
             wall.moveVertical(20);
             wall.changeSize(120);
             wall.makeVisible();
