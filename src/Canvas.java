@@ -112,23 +112,23 @@ public class Canvas
      */
     public void setForegroundColor(String colorString)
     {
-        if(colorString.equals("red")) {
-            graphic.setColor(new Color(235, 25, 25));
+        if(colorString.equals("brick")) {
+            graphic.setColor(new Color(160, 50, 15));
+        }
+        else if(colorString.equals("ground")) {
+            graphic.setColor(new Color(200, 200, 200));
+        }
+        else if(colorString.equals("wall")) {
+            graphic.setColor(new Color(110, 110, 190));
+        }
+        else if(colorString.equals("trim")) {
+            graphic.setColor(new Color(230, 230, 220));
+        }
+        else if(colorString.equals("sky")) {
+            graphic.setColor(new Color(135, 155, 255));
         }
         else if(colorString.equals("black")) {
-            graphic.setColor(Color.black);
-        }
-        else if(colorString.equals("blue")) {
-            graphic.setColor(new Color(30, 75, 220));
-        }
-        else if(colorString.equals("yellow")) {
-            graphic.setColor(new Color(255, 230, 0));
-        }
-        else if(colorString.equals("green")) {
-            graphic.setColor(new Color(80, 160, 60));
-        }
-        else if(colorString.equals("magenta")) {
-            graphic.setColor(Color.magenta);
+            graphic.setColor(new Color(90, 90, 90));
         }
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
