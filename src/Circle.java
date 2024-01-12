@@ -12,12 +12,12 @@ public class Circle
     /**
      * Create a new circle at default position with default color.
      */
-    public Circle()
+    public Circle(int diam, int xpos, int ypos, String color)
     {
-        diameter = 68;
-        xPosition = 230;
-        yPosition = 90;
-        color = "blue";
+        diameter = diam;
+        xPosition = xpos;
+        yPosition = ypos;
+        this.color = color;
     }
 
     /**

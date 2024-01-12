@@ -12,13 +12,13 @@ public class Triangle
     /**
      * Create a new triangle at default position with default color.
      */
-    public Triangle()
+    public Triangle(int sizeX, int sizeY,int posX,int posY, String color)
     {
-        height = 60;
-        width = 70;
-        xPosition = 210;
-        yPosition = 140;
-        color = "green";
+        height = sizeX;
+        width = sizeY;
+        xPosition = posX;
+        yPosition = posY;
+        this.color = color;
         isVisible = false;
     }
 

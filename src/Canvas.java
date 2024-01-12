@@ -127,6 +127,9 @@ public class Canvas
         else if(colorString.equals("sky")) {
             graphic.setColor(new Color(135, 155, 255));
         }
+        else if(colorString.equals("yellow")) {
+            graphic.setColor(new Color(210, 200, 90));
+        }
         else if(colorString.equals("black")) {
             graphic.setColor(new Color(90, 90, 90));
         }
